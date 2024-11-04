@@ -1,4 +1,4 @@
-package com.by.fp.essential
+package com.by.fp.essential.cafe
 
 import com.typesafe.scalalogging.Logger
 

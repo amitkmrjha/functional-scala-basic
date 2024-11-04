@@ -1,6 +1,6 @@
 package com.by.fp
 
-import com.by.fp.essential.Cafe
+import com.by.fp.essential.cafe.Cafe
 import com.typesafe.scalalogging.Logger
 
 object ScalaFPMain:
