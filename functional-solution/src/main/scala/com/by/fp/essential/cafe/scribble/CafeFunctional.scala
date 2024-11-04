@@ -23,7 +23,6 @@ case class Charge(cc: CreditCard, amount: Double):
     if cc == other.cc then Charge(cc, amount + other.amount)
     else throw Exception("Can't combine charges with different cards")
 
-
 class CafeFunctional:
   def buyCoffee(cc: CreditCard): (Coffee, Charge) =
     val cup = Coffee()
@@ -48,3 +47,6 @@ object CafeFunctional:
 
   def coalesce(charges: List[Charge]): List[Charge] =
     charges.groupBy(_.cc).values.map(_.reduce((c1, c2) => c1.combine(c2))).toList
+
+//p(buyCoffee(aliceCreditCard))
+//p(Coffee())
